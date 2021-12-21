@@ -35,7 +35,7 @@ button:hover{
 
 .container{
     max-width: 1400px;
-    margin: auto;
+    margin: auto ;
 }
 
 .color-acento{ color:blueviolet; }
@@ -313,7 +313,7 @@ footer .container{
     #caracteristicas ul{
         margin-left: 100px;
     }
-    
+
     footer .container{
         justify-content: flex-end;
     }
