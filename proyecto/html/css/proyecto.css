@@ -33,12 +33,12 @@ button:hover{
     background-color: rgb(101, 33, 165);
 }
 
-.container{
+.cuerpo{
     max-width: 1400px;
     margin: auto ;
 }
 
-.color-acento{ color:blueviolet; }
+.color{ color:blueviolet; }
 
 header{
     background-color: rgb(245,245,245);
@@ -53,7 +53,7 @@ header .logo{
     font-size: 1.6em;
 }
 
-header .container{
+header .cuerpo{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,7 +77,7 @@ header a:hover{
     color: blueviolet;
 }
 
-#hero{
+#titulo{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,35 +95,35 @@ header a:hover{
     background-position: center center;
 }
 
-#hero h1{
+#titulo h1{
     color: white;
 }
 
-#somos-proya .container{
+#info .cuerpo{
     text-align: center;
     padding: 100px 12px;
 }
 
-#nuestros-programas{
+#menu{
     background-color: rgb(30,30,30);
     color: white;
     text-align: center;
 }
 
-#nuestros-programas .container{
+#menu .cuerpo{
     padding: 150px 12px;
 }
 
-#nuestros-programas h2{
+#menu h2{
     margin-top: 0;
     font-size: 3.2em;
 }
 
-#nuestros-programas p{
+#menu p{
     display: none;
 }
 
-#nuestros-programas .carta{
+#menu .division{
     background-position: center center;
     background-size: cover;
     padding: 50px 0px;
@@ -131,7 +131,7 @@ header a:hover{
     border-radius: 15px;
 }
 
-.carta:first-child{
+.division:first-child{
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -141,7 +141,7 @@ header a:hover{
 
 }
 
-.carta:nth-child(2){
+.division:nth-child(2){
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -150,17 +150,17 @@ header a:hover{
     ,url("imagenes/segu.jpg");
 }
 
-#caracteristicas .container{
+#cont .cuerpo{
     text-align: center;
     padding: 100px 12px;
 }
 
-#caracteristicas li  {
+#cont li  {
     font-size: 30px;
     margin: 20px 0px;
     font-weight: bold;
 }
-#caracteristicas li ul li{
+#cont li ul li{
     margin: 16px 0px;
     font-weight: bold;
     font-size: 15px;
@@ -177,7 +177,7 @@ footer p{
     color: rgb(100,100,100);
 }
 
-footer .container{
+footer .cuerpo{
     height: 150px;
     display: flex;
     justify-content: center;
@@ -190,7 +190,7 @@ footer .container{
         width: 100%;
     }
 
-    header .container{
+    header .cuerpo{
         flex-direction: row;
         justify-content: space-between;
     }
@@ -201,16 +201,16 @@ footer .container{
         padding-right: 20px;
     }
 
-    #hero h1{
+    #titulo h1{
         font-size: 5em;
     }
 
-    #somos-proya .container{
+    #info .cuerpo{
         display: flex;
         justify-content: space-evenly;
     }
 
-    #somos-proya .texto{
+    #info .texto{
         width: 50%;
         max-width: 600px;
         text-align: initial;
@@ -221,11 +221,11 @@ footer .container{
         text-align: justify;
     }
 
-    #somos-proya h2{
+    #info h2{
         margin-top: 0px;
     }
 
-    #somos-proya .img-container{
+    #info .img{
         background-image: url("imagenes/somos.jpg");
         background-size: cover;
         background-position: center center;
@@ -233,25 +233,25 @@ footer .container{
         width: 500px; 
     }
 
-    #nuestros-programas .programas{
+    #menu .menu2{
         display: flex;
         justify-content: center;
     }
 
-    #nuestros-programas p{
+    #menu p{
         display: block;
         margin-bottom: 30px;
     }
 
-    #nuestros-programas h2{
+    #menu h2{
         font-size: 4em;
     }
 
-    #nuestros-programas h3{
+    #menu h3{
         margin-top: 0;
     }
 
-    #nuestros-programas .carta{
+    #menu .division{
         padding: 50px;
         background-size: 100% 150px;
         background-repeat: no-repeat;
@@ -260,7 +260,7 @@ footer .container{
         box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     }
 
-    .carta:first-child{
+    .division:first-child{
         background-image: linear-gradient(
             0deg,
             rgba(0,0,0,0.5),
@@ -270,7 +270,7 @@ footer .container{
         
     }
 
-    .carta:nth-child(2){
+    .division:nth-child(2){
         background-image: linear-gradient(
             0deg,
             rgba(0,0,0,0.5),
@@ -280,28 +280,28 @@ footer .container{
        
     }
 
-    #caracteristicas{
-        background-image: url("imagenes/itx.png");
+    #cont{
+        background-image: url("imagenes/cont.png");
         background-repeat: no-repeat;
         background-size: 500px 400px;
         background-position: calc(100vw - 500px) 120px;
     }
 
-    #caracteristicas .container{
+    #cont .cuerpo{
         text-align: initial;
     }
 
-    #caracteristicas ul{
+    #cont ul{
         margin-left: 100px;
     }
 
-    footer .container{
+    footer .cuerpo{
         justify-content: flex-end;
     }
 }
 
 @media (min-width: 1200px) {
-    #caracteristicas{
-        background-position-x: calc(100vw - 800px);
+    #cont{
+        background-position-x: calc(100vw - 700px);
     }
 }
